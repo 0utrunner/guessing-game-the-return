@@ -1,11 +1,70 @@
-/* styles.css */
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Monoton|Raleway');
+
 body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "raleway", sans-serif;
   font-weight: 300;
+  text-align: center;
+  background-color: black;
+  color: rgb(200, 200, 200)
+}
+
+h1{
+  font-family: broadway;
+  font-weight: 400;
+  border: 1px solid rgb(160, 50, 200);
+  outline: 3px dotted rgb(250, 80, 0);
+}
+
+#answer-text{
+  position: relative;
+  font-size: 20px;
+  top: 10px;
+}
+
+#answer{
+  position: relative;
+  top: 20px;
+  left: 60px;
   text-align: center;
 }
 
-h1 {
-  font-weight: 400
+#button{
+  position: relative;
+  top: 50px;
+  right: 80px;
 }
 
+#hint{
+  position: relative;
+  color: yellow;
+  font-size: 50px;
+  padding: 30px;
+}
+
+.water{
+  position: relative;
+  background-color:blue;
+  width: 1310px;
+  height:1000px;
+  animation: lose 5s;
+  z-index: 5;
+  top: 400px;
+}
+
+@keyframes lose{
+ 0% {top: 200px;}
+ 50% {top: 0px; background-color: rgb(0, 0, 180)}
+ 100% {top: -600px; background-color: rgb(0, 0, 80)}
+}
+
+.arrow{
+  position: relative;
+  animation: bob 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bob{
+  0% {top: 0px;}
+  50% {top: 6px;}
+  100% {top: 0px;}
+}
