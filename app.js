@@ -35,5 +35,4 @@ function guessingGame(){
             window.location.reload(1);
         }, 5000);
     }
-
 }
